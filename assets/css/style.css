@@ -304,7 +304,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 182px;
+  max-height: 152px;
  
   overflow: hidden;
   transition: var(--transition-2);
@@ -321,17 +321,20 @@ main {
 }
 
 .avatar-box {
-
-height: 100%;
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 50%; /* Make the image circular, optional */
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
 }
-.avatar-box img {
-width: 100%;
-max-width: 150px;
-height: 100%;
-min-height: 50px;
-  border-radius: 20px;
+
+.avatar-box img.responsive-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire box without stretching */
+  border-radius: 50%; /* Make the image circular, optional */
 }
 
 .info-content .name {
