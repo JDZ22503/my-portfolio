@@ -332,7 +332,7 @@ main {
 
 .avatar-box img.responsive-img {
   width: 100%;
-  height: auto;
+  height:100px;
   object-fit: cover; /* Ensure the image covers the entire box without stretching */
   border-radius: 50%; /* Make the image circular, optional */
 }
